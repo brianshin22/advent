@@ -2,6 +2,8 @@
 # Uses Peter Norvig's website to get input files for Advent of Code 2016
 import urllib.request
 import re
+import numpy as np
+
 
 def Input(day):
     """"Open this day's input file."""
