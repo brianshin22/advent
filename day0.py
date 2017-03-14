@@ -5,6 +5,12 @@ import re
 import numpy as np
 import collections
 
+
+def parse(day):
+    data = Input(day).read().split('\n')
+    return [el for el in data if el != '']
+
+
 def Input(day):
     """"Open this day's input file."""
     filename = 'input/input{}.txt'.format(day)
@@ -13,6 +19,15 @@ def Input(day):
     except FileNotFoundError:
         raise AssertionError("Input file not found.")
 
+
+def l2s(l):
+    """convert list of chars to string"""
+    return ''.join(l)
+
+
+def s2a(s):
+    """convert string to numpy array"""
+    return np.array(list(s))
 
 # point is a tuple
 def x(point): return point[0]

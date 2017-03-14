@@ -3,9 +3,7 @@
 from day0 import *
 
 
-def parse(day):
-    data = Input(day).read().split('\n')
-    return [el for el in data if el != '']
+
 
 
 def check_name(str, check):
