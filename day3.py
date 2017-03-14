@@ -36,6 +36,7 @@ def num_triangles(data):
     """return number of valid triangles, sides of triangle per row"""
     return sum(list(map(check_triangle, data)))
 
+
 def num_triangles2(data):
     """count triangles vertically by column in groups of three"""
     data = np.array(data).T.flatten()

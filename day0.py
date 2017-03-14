@@ -3,7 +3,7 @@
 import urllib.request
 import re
 import numpy as np
-
+import collections
 
 def Input(day):
     """"Open this day's input file."""
