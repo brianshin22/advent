@@ -7,6 +7,7 @@ import collections
 
 
 def parse(day):
+    """return list of lines of input"""
     data = Input(day).read().split('\n')
     return [el for el in data if el != '']
 
