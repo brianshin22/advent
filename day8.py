@@ -1,4 +1,5 @@
 # Day 8
+# Turn on screen and rotate rows/columns according to commands
 
 from day0 import *
 from matplotlib import pyplot as plt
