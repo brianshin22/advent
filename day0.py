@@ -1,9 +1,12 @@
 # Inspired by Peter Norvig Advent of Code challenge
 # Uses Peter Norvig's website to get input files for Advent of Code 2016
+
 import urllib.request
 import re
 import numpy as np
-import collections
+from collections import namedtuple
+from itertools import combinations, chain
+import math
 
 
 def parse(day):
